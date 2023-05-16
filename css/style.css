@@ -35,9 +35,8 @@
     flex-wrap: wrap;
 }
 
-.my-row .column-1, .column-2, .column-3 {
+.my-row .column-1, .column-2, .column-3, .column-8, .column-9, .column-10, .column-11, .column-12, .column-13 {
     width: calc(90% / 3);
-    
 }
 
 /*HEADER*/
@@ -138,6 +137,16 @@ section .container input {
     width: 40%;
 }
 
+/*SECTION 3*/
+.my-row .column-11, .column-12, .column-13 {
+    margin-top: 50px;
+}
+
+.container .margin-bottom {
+    margin-bottom: 40px;
+}
+
+
 
 
 
@@ -205,4 +214,44 @@ section .container input {
     height: 600px;
     background-color: green;
 }
+
+
+/*section 3*/
+
+.debug .column-8 .img {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.debug .column-9 .img {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.debug .column-10 .img {
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+}
+
+.debug .column-11 .img {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.debug .column-12 .img {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.debug .column-13 .img {
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+}
+
 
