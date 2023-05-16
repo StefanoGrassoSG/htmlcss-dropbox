@@ -6,3 +6,55 @@
 }
 
 /*GENERAL*/
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.jumbotron {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*HEADER*/
+.header-top {
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+
+.header-bottom {
+    background-color: #B4D0E7;
+}
+
+
+
+
+
+
+/*DEGUG*/
+.debug  {
+    background-color: black;
+}
+
+.debug .header-top {
+    border: 3px dashed red;
+}
+
+.debug .header-bottom {
+    border: 3px dashed black;
+}
+
+.debug .header-top-left {
+    border: 3px dashed orange;
+}
+
+.debug .header-top-right {
+    border: 3px dashed pink;
+}
+
+.debug .jumbotron {
+    height: 800px;
+    background-color: red;
+    border: 3px dashed navy;
+}
