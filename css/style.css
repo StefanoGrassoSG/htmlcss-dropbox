@@ -65,6 +65,16 @@
     height: 50%;
 }
 
+.foot-container {
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+footer .my-row-2, .footcl-1, .footcl-2, .footcl-3, .footcl-4, .footcl-5 {
+    width: calc(90% / 5);
+}
+
 /*HEADER*/
 .header-top {
     background-color: #FFFFFF;
@@ -229,6 +239,74 @@ section .container input {
     padding: 120px;
 }
 
+.azure-section .column-4 h4 {
+    padding-left: 0;
+}
+
+.azure-section .column-5 {
+    padding-right: 0;
+    text-align: right;
+}
+
+/*section 7*/
+.container .faq {
+    padding: 30px 0;
+}
+
+.title-faq {
+    margin-bottom: 40px;
+}
+
+.container .faq.one {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .faq.two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .faq.three {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-chevron-down {
+    padding: 20px;
+}
+
+/*FOOTER*/ 
+footer {
+    background-color: black;
+    margin-top: 150px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 20px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer .language {
+    width: 10%;
+    margin: 50px 20px;
+    border-top: 1px solid white;
+    padding-top: 30px;
+}
+
+
+
 
 
 
@@ -239,7 +317,7 @@ section .container input {
 
 /*DEGUG*/
 .debug  {
-    background-color: black;
+  
 }
 
 .debug .header-top {
@@ -332,6 +410,10 @@ section .container input {
     width: 200px;
     height: 200px;
     background-color: beige;
+}
+
+.foot-container {
+    border: 3px dashed red;
 }
 
 
