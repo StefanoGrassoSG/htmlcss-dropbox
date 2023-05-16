@@ -39,6 +39,32 @@
     width: calc(90% / 3);
 }
 
+.row-logos {
+    width: 100;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-logos .big-square {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+.row-logos .big-square.left, .big-square.right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-logos .big-square.left .small-square {
+    width: 50%;
+    height: 50%;
+}
+
+.row-logos .big-square.right .small-square {
+    width: 50%;
+    height: 50%;
+}
+
 /*HEADER*/
 .header-top {
     background-color: #FFFFFF;
@@ -152,7 +178,50 @@ section .container input {
     display: block;
 }
 
+/*SECTION 5*/
+.row-logos .big-square.center {
+    background-color: grey;
+}
 
+.row-logos .big-square.left {
+    background-color: red;
+}
+
+.row-logos .big-square.right {
+    background-color: blue;
+}
+
+.small-square.designit {
+    background-color: lightgreen;
+}
+
+.small-square.asu {
+    background-color: darkred;
+}
+
+.small-square.florida {
+    background-color:  lightblue;
+}
+
+.small-square.topps {
+    background-color: red;
+}
+
+.small-square.relief {
+    background-color: rgb(167, 21, 21);
+}
+
+.small-square.hearst {
+    background-color: aqua;
+}
+
+.small-square.lonely {
+    background-color: blue;
+}
+
+.small-square.clear {
+    background-color: yellow;
+}
 
 
 
