@@ -223,6 +223,11 @@ section .container input {
     background-color: yellow;
 }
 
+/*SECTION 6*/ 
+.azure-section {
+    background-color: #B4D0E7;
+    padding: 120px;
+}
 
 
 
