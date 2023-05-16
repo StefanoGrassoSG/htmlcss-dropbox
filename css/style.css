@@ -29,6 +29,12 @@
     justify-content: space-between;
 }
 
+.my-row-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .my-row .column-1, .column-2, .column-3 {
     width: calc(90% / 3);
     
@@ -123,6 +129,15 @@ section .container input {
     margin: 40px 0 20px 20px;
 }
 
+/*SECTION 2*/
+.my-row-2 .column-6 {
+    width: 60%;
+}
+
+.my-row-2 .column-7 {
+    width: 40%;
+}
+
 
 
 
@@ -161,7 +176,7 @@ section .container input {
 }
 
 .debug .container {
-    height: 1000px;
+
     border: 3px dashed red;
 }
 
@@ -176,3 +191,18 @@ section .container input {
 .my-row .banner-1, .banner-2, .banner-3, .banner-team {
     border: 3px dashed violet;
 }
+
+
+/*SECTION 2*/
+.debug .my-row-2 .column-6 {
+    width: 60%;
+    height: 600px;
+    background-color: aquamarine;
+}
+
+.debug .my-row-2 .column-7 {
+    width: 40%;
+    height: 600px;
+    background-color: green;
+}
+
