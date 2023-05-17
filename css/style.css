@@ -481,8 +481,28 @@ input:checked {
     font-weight: bold;
 }
 
+.container .faq.one:hover, .faq.two:hover, .faq.three:hover {
+    background-color: rgb(233, 229, 229);
+    cursor: pointer;
+}
+
 .fa-chevron-down {
     padding: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    max-width: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*FOOTER*/ 
@@ -525,16 +545,3 @@ footer .language:hover {
     text-decoration: underline white;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*DEGUG*/
-
