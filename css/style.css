@@ -178,6 +178,10 @@ section {
     padding-top: 150px;
 }
 
+.my-row.border {
+    border: 1px solid lightgray;
+}
+
 .column-1.border, .column-2.border, .column-3.border {
     border: 1px solid lightgrey;
 }
@@ -213,9 +217,16 @@ input:checked {
     border: 5px solid #0061FF ;
   }
 
-.my-row .banner-1, .banner-2, .banner-3, .banner-team {
+.my-row .banner-1, .banner-2, .banner-3 {
     padding: 10px 30px;
     border-bottom: 1px solid lightgray;
+}
+
+.banner-team {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 10px 30px;
 }
 
 .my-row .content-column-1 h4, .content-column-2 h4, .content-column-3 h4 {
@@ -246,6 +257,10 @@ input:checked {
 
 .container .my-row .price {
     font-weight: bold;
+}
+
+.container .my-row .period {
+    color: lightgray;
 }
 
 .my-row .try-now {
