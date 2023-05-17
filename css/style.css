@@ -172,10 +172,32 @@ section {
     padding-top: 100px;
 }
 
+.container h2 {
+    font-size: 2.5em;
+}
+
 section .container input {
-    margin: 30px 0;
+    margin: 40px 0;
     vertical-align: middle;
 }
+
+section .container label {
+    margin-right: 30px;
+}
+
+input {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+}
+
+input:checked {
+    border: 5px solid #0061FF ;
+  }
 
 .container .my-row .column-1, .column-2, .column-3,  .banner-team {
     text-align: center;
@@ -185,10 +207,20 @@ section .container input {
     padding: 10px 30px;
 }
 
-.container ul {
-    list-style:none;
+.my-row .content-column-1 h4, .content-column-2 h4, .content-column-3 h4 {
     text-align: left;
-    padding: 30px 20px 10px 20px;
+    padding: 30px 0 0 20px;
+    font-size: 1em;
+}
+
+.container ul {   
+    text-align: left;
+    padding: 30px 20px 10px 0px;
+}
+
+.container .ulnostyle {
+    list-style: none;
+    margin-left: 20px;
 }
 
 .container .my-row ul li {
@@ -197,30 +229,50 @@ section .container input {
 
 .container .my-row ul h3 {
     margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
-.container .my-row .buy-now, h4 {
-    padding: 25px 20px;
+.container .my-row .price {
+    font-weight: bold;
+}
+
+.my-row .try-now {
+    background-color: #0061FF;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    margin: 20px 0 10px 0;
+    display: inline-block;
+    width: 85%;
+    text-align: center;
+}
+
+.my-row .buy-now  a {
+    color: blue;
+}
+
+.try-now:hover {
+    opacity: 0.8;
+}
+
+.container .my-row .buy-now {
+    padding: 35px 20px ;
     text-align: left;
 }
 
 .container .my-row .buy-now span {
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid #E1E1E3;
     padding-bottom: 30px;
-}
-
-.container .my-row ul:last-of-type {
-    padding: 0 20px;
 }
 
 .banner-team {
     margin-top: 40px;
 }
 
-
-
 .my-row .column-4 h4 {
-    padding-bottom: 10px;
+    padding: 20px 0 10px 20px;
+    font-size: 1.5em;
 }
 
 .my-row .column-4 h5 {
@@ -235,10 +287,6 @@ section .container input {
 
 
 /*SECTION 3*/
-.my-row .column-1, .column-2, .column-3 {
-    margin-top: 50px;
-}
-
 .container .margin-bottom {
     margin-bottom: 40px;
 }
