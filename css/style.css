@@ -6,7 +6,6 @@
 }
 
 /*GENERAL*/
-
 * {
     font-family: 'Open Sans', sans-serif;
 }
@@ -14,6 +13,12 @@
 * {
     color: black;
 }
+
+section {
+    background-color: #FFFFFF;
+    padding-top: 150px;
+}
+
 
 .header-top {
     display: flex;
@@ -56,6 +61,9 @@
 
 .my-row .column-5 {
     width: 30%;
+}
+
+.column-5.flex {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -151,23 +159,21 @@ footer .my-row-2, .footcl-1, .footcl-2, .footcl-3, .footcl-4, .footcl-5 {
     opacity: 0;
     position: absolute;
     padding-left: 0;
-    left: 20;
     display: none;
     background: white;
-    cursor: pointer;
 }
 
 .header-top-left ul li:hover > .perchè-dropbox,  ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  max-width: 200px;
-  text-align: left;
-  padding-top: 20px;
-  box-shadow: 0px 3px 5px -1px #ccc;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    max-width: 200px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
 }
 
-.header-top-left ul li ul li {
+.header-top-left ul li ul li,  .header-top-right ul li ul li {
     clear: both;
     width: 100%;
     text-align: left;
@@ -175,7 +181,7 @@ footer .my-row-2, .footcl-1, .footcl-2, .footcl-3, .footcl-4, .footcl-5 {
     border-style: none;
 }
 
-.header-top-left ul li ul li a:hover, h4 {
+.header-top-left ul li ul li a:hover {
     padding-left: 15px;
     border-left: 2px solid #3ca0e7;
     transition: all 0.2s ease;
@@ -187,10 +193,8 @@ footer .my-row-2, .footcl-1, .footcl-2, .footcl-3, .footcl-4, .footcl-5 {
     opacity: 0;
     position: absolute;
     padding-left: 0;
-    left: 20;
     display: none;
     background: white;
-    cursor: pointer;
 }
 
 .header-top-left ul li:hover > .solutions,  ul li ul:hover {
@@ -201,6 +205,41 @@ footer .my-row-2, .footcl-1, .footcl-2, .footcl-3, .footcl-4, .footcl-5 {
     text-align: left;
     padding-top: 20px;
     box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.header-top-left ul li ul li h4 {
+    padding-left: 10px;
+}
+
+
+/*DROPDOWN NAV SUPPORTO*/
+.dropdown.support {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    display: none;
+    background: white;
+}
+
+.header-top-right ul li:hover > .support,  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    max-width: 200px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.header-top-right ul li ul li a:hover {
+    padding-left: 15px;
+    border-left: 2px solid #3ca0e7;
+    transition: all 0.2s ease;
+}
+
+.header-top-right ul li ul li h4 {
+    padding-left: 10px;
 }
 
 /*HEADER-BOTTOM*/
@@ -239,12 +278,7 @@ footer .my-row-2, .footcl-1, .footcl-2, .footcl-3, .footcl-4, .footcl-5 {
 }
 
 /*MAIN*/
-/*SECTION 1*/
-section {
-    background-color: #FFFFFF;
-    padding-top: 150px;
-}
-
+/*SECTION 1/SUBSCRIPTION SECTION*/
 .my-row.border {
     border: 1px solid lightgray;
 }
@@ -282,7 +316,7 @@ input {
 
 input:checked {
     border: 5px solid #0061FF ;
-  }
+}
 
 .my-row .banner-1, .banner-2, .banner-3 {
     padding: 10px 30px;
@@ -364,7 +398,7 @@ input:checked {
 }
 
 .my-row .column-4 h4 {
-    padding: 10px 0 10px 20px;
+    padding: 20px 0 10px 20px;
     font-size: 1.5em;
 }
 
@@ -376,7 +410,7 @@ input:checked {
     margin: 40px 0 20px 20px;
 }
 
-/*SECTION 2*/
+/*SECTION 2/PARTNER SECTION*/
 .column-6 img {
     width: 100%;
 }
@@ -400,7 +434,7 @@ input:checked {
     opacity: 0.8;
 }
 
-/*SECTION 3*/
+/*SECTION 3/TOOLS SECTION*/
 .container .margin-bottom {
     margin-bottom: 40px;
 }
@@ -414,14 +448,14 @@ input:checked {
     margin-bottom: 30px;
 }
 
-/*SECTION 4*/
+/*SECTION 4/STAT SECTION*/
 .container .margin-link  {
     margin-top: 40px;
     display: block;
     color: blue;
 }
 
-/*SECTION 5*/
+/*SECTION 5/CUSTOMER SECTION*/
 .small-square img {
     width: 150px;
 }
@@ -490,15 +524,14 @@ input:checked {
     background-color: #FFD830;
 }
 
-/*SECTION 6*/ 
+/*SECTION 6/FREE TRIAL SECTION*/ 
 .azure-section {
     background-color: #B4D0E7;
     padding: 120px;
 }
 
 .azure-section .column-4 h4 {
-    padding-right: 150px;
-    padding-left: 0;
+    padding: 10px 150px 0 0; 
     font-size: 2.5em;
     color: #61072B;
 }
@@ -513,7 +546,7 @@ input:checked {
     color: black;
 }
 
-/*section 7*/
+/*section 7/FAQ SECTION*/
 .container .faq {
     padding: 30px 0;
 }
@@ -523,59 +556,44 @@ input:checked {
     font-size: 2.5em;
 }
 
-.container .faq.one {
+.container .faq {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-weight: bold;
-    transition: ease-in-out height 3s;
+    position: relative;
 }
 
-.container .faq.two {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
-
-.container .faq.three {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
+.faq.two, .faq.three {
+    border-top: none;
 }
 
 .container .faq.one:hover, .faq.two:hover, .faq.three:hover {
-    background-color: rgb(233, 229, 229);
+    background-color: #F7F5F2;
     cursor: pointer;
 }
 
 .fa-chevron-down {
-    padding: 20px;
+   position: absolute;
+   right: 20px;
+   top: 40px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    max-width: 1000px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+/*DROPDOWN FAQ*/
+.dropdown-content, .dropdown-content a {
+    overflow: hidden;
+    z-index: -1;
+    height: 0;
+    transition: all ease-in-out 0.3s;
+    font-weight: 400;
+    line-height: 25px;
+    width: 80%;
+    margin-top: 10px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.faq:hover  .dropdown-content {
+    height: 100px;
 }
-
-.faq.one:hover {
-    height: 250px;
-}
+  
 
 /*FOOTER*/ 
 footer {
